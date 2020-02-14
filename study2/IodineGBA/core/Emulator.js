@@ -165,11 +165,11 @@ GameBoyAdvanceEmulator.prototype.runTerminationJobs = function () {
 }
 GameBoyAdvanceEmulator.prototype.attachROM = function (ROM) {
     this.stop();
-    this.ROM = ROM;
+    this.ROM = '/flash/rom/AdvancedWars.gba;
 }
 GameBoyAdvanceEmulator.prototype.attachBIOS = function (BIOS) {
     this.stop();
-    this.BIOS = BIOS;
+    this.BIOS = '/flash/rom/GBA.BIOS';
 }
 GameBoyAdvanceEmulator.prototype.getGameName = function () {
     if ((this.emulatorStatus & 0x3) == 0x1) {
