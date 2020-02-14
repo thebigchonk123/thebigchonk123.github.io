@@ -107,7 +107,7 @@ function fadeOut(id, nextId, kill) {
 function run(file) {
 	var dead = document.getElementById('loader');
 	dead.value = '';
-	var load = /flash/rom/AdvancedWars.gba('select');
+	var load = document.getElementById('select');
 	load.textContent = 'Loading...';
 	load.removeAttribute('onclick');
 	var pause = document.getElementById('pause');
